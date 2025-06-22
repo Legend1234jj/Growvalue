@@ -1,1 +1,55 @@
-<!-- Homepage with game selection -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow Value - Skill Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+    .games {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 30px;
+    }
+    .game-card {
+      background: #1a1a1a;
+      padding: 20px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffcc;
+      transition: 0.3s;
+      font-size: 1.5em;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffcc;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grow Value </h1>
+  <p>Choose a game to sharpen your mind</p>
+  <div class="games">
+    <a href="typing.html" class="game-card">Typing Challenge</a>
+    <a href="quiz.html" class="game-card">Quiz Battle</a>
+    <a href="math.html" class="game-card"> Math Fight</a>
+  </div>
+</body>
+</html>
