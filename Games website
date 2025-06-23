@@ -94,9 +94,9 @@
   </style>
 </head>
 <body>
-  <button id="toggleMode">🌙 Dark Mode</button>
+  <button id="toggleMode"> Dark Mode</button>
   <header>
-    <h1>🌱 GrowValue – Learn & Play</h1>
+    <h1> GrowValue – Learn & Play</h1>
     <p>Boost your brain with fun interactive games 🎮</p>
   </header>  <!-- Typing Speed Game -->  <div class="game">
     <h2>Typing Speed Test</h2>
@@ -116,7 +116,7 @@
     <button id="clicker">Click me fast!</button>
     <p id="clickCount">Clicks: 0</p>
     <p id="clickScore"></p>
-    <h3>🏆 Leaderboard</h3>
+    <h3> Leaderboard</h3>
     <ul class="leaderboard" id="leaderboard"></ul>
   </div>  <script>
     // Dark mode toggle
@@ -134,7 +134,7 @@
     input.addEventListener('input', () => {
       if (input.value === text) {
         const time = (new Date().getTime() - startTime) / 1000;
-        result.innerText = `🎯 Time taken: ${time.toFixed(2)} seconds`;
+        result.innerText = ` Time taken: ${time.toFixed(2)} seconds`;
         const score = Math.max(100 - Math.floor(time * 5), 0);
         scoreTyping.innerText = `Your Score: ${score}`;
       }
@@ -155,10 +155,10 @@
     function checkAnswer() {
       const userAnswer = parseInt(answerInput.value);
       if (userAnswer === correct) {
-        feedback.innerText = "✅ Correct!";
-        mathScore.innerText = "🎉 Score: 10";
+        feedback.innerText = " Correct!";
+        mathScore.innerText = " Score: 10";
       } else {
-        feedback.innerText = "❌ Try again.";
+        feedback.innerText = " Try again.";
         mathScore.innerText = "Score: 0";
       }
     }
